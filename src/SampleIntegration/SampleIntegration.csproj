@@ -30,13 +30,83 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DesignScriptBuiltin">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DesignScriptBuiltin.dll</HintPath>
+    </Reference>
+    <Reference Include="DSCPython">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DSCPython.dll</HintPath>
+    </Reference>
+    <Reference Include="DSIronPython">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DSIronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoApplications">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoApplications.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoCore">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoCore.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoCoreTests">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoCoreTests.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoInstallDetective">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoInstallDetective.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoServices">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoServices.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoShapeManager">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoShapeManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoUnits">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoUnits.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamoUtilities">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\DynamoUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoCore">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\ProtoCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoGeometry">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\ProtoGeometry.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleLibraryTests">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\SampleLibraryTests.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\System.Collections.Immutable.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="SystemTestServices">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\SystemTestServices.dll</HintPath>
+    </Reference>
+    <Reference Include="TestServices">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\TestServices.dll</HintPath>
+    </Reference>
+    <Reference Include="VMDataBridge">
+      <HintPath>..\..\..\Dynamo\bin\AnyCPU\Debug\VMDataBridge.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Hog.cs" />
@@ -44,10 +114,10 @@
     <Compile Include="TracedHog.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\NodeServices\DynamoServices.csproj">
-      <Project>{ef879a10-041d-4c68-83e7-3192685f1bae}</Project>
-      <Name>DynamoServices</Name>
-    </ProjectReference>
+    <Content Include="images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
